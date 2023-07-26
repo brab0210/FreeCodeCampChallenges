@@ -6,7 +6,7 @@ Hay cinco challenges para obtener el certificado y son:
 ## Challenges
 
 - ~~Tribute Page~~
-- Survey Form
-- Product Landing Page
+- ~~Survey Form~~
+- Product Landing Page **Doing**
 - Technical Documentation Page
 - Personal Portfolio Webpage
