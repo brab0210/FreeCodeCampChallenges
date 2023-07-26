@@ -15,23 +15,23 @@
             <form action="/" method="post" id="survey-form">
                 
                 <div class="form-group">
-                    <label for="name" id="name-label">Fullname:</label>
-                <input type="text" name="name" id="name" required placeholder="Enter your name">
+                    <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" required placeholder="Enter your name" class="form-control">
                 </div>
                 
                 <div class="form-group">
-                <label for="email" id="email-label">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required class="form-control">
                 </div>
 
                 <div class="form-group">
                 <label for="number" id="number-label">Age <span>(optional)</span></label>
-                <input type="number" name="number" id="number" min="1" max="10" placeholder="Age">
+                <input type="number" name="number" id="number" min="1" max="10" placeholder="Age" class="form-control">
                 </div>                
                 
                 <div class="form-group">
                     <label for="options">Which option best describes your current role?</label>
-                    <select name="options" size="1" id="dropdown">
+                    <select name="options" size="1" id="dropdown" class="form-control">
                         <option disabled selected>Select current role</option>
                         <option value="student">Student</option>
                         <option value="fulltime-job">Full Time Job</option>
@@ -43,17 +43,23 @@
             
                 <div class="form-group">
                     <p>Would you recommend freeCodeCamp to a friend?</p>
-                    <input type="radio" name="recommend">
-                    <label for="definitely">Definitely</label>
-                    <input type="radio" name="recommend">
-                    <label for="maybe">Female</label>
-                    <input type="radio" name="recommend">
-                    <label for="not-sure">Not sure</label>
+                    <label for="definitely">
+                        <input type="radio" name="recommend" checked class="input-radio" value="definitely">
+                    Definitely
+                    </label>
+                    <label for="maybe">
+                        <input type="radio" name="recommend" class="input-radio" value="maybe">
+                    Maybe
+                    </label>
+                    <label for="not-sure">
+                        <input type="radio" name="recommend" class="input-radio" value="not-sure">
+                        Not sure
+                    </label>
                 </div>
 
                 <div class="form-group">
                     <p for="options">What is your favorite feature of freeCodeCamp?</p>
-                    <select name="options" size="1" id="dropdown">
+                    <select name="options" size="1" id="dropdown" class="form-control">
                         <option disabled selected>Select an option</option>
                         <option value="challenges">Challenges</option>
                         <option value="projects">Projects</option>
@@ -64,17 +70,23 @@
 
                 <div class="form-group">
                     <p>Select your favorites meals:</p>
-                    <input type="checkbox" value="Pizza">
-                    <label for="pizza">Pizza</label>
-                    <input type="checkbox" value="Sushi">
-                    <label for="sushi">Sushi</label>
-                    <input type="checkbox" value="BBQ">
-                    <label for="bbq">BBQ</label>
-                    <input type="checkbox" value="HotDog">
-                    <label for="hotdog">Hot-Dog</label>
+                    <label for="pizza">
+                        <input type="checkbox" value="Pizza" class="input-checkbox">
+                    Pizza
+                    </label>
+                    <label for="sushi">
+                    <input type="checkbox" value="Sushi" class="input-checkbox">
+                    Sushi
+                    </label>
+                    <label for="bbq">
+                    <input type="checkbox" value="BBQ" class="input-checkbox">
+                    BBQ</label>
+                    <label for="hotdog">
+                    <input type="checkbox" value="HotDog" class="input-checkbox">
+                    Hot-Dog</label>
                 </div>
                 <p>Any comments or suggestions?</p>
-                <textarea name="comment" placeholder="Enter your comment here..."></textarea>
+                <textarea name="comment" placeholder="Enter your comment here..." class="form-control"></textarea>
                 <button type="submit" id="submit">Submit</button>
             </form>
         
