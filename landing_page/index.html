@@ -7,33 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="page-wrapper">
     <header id="header">
-        <img src="" alt="logo" id="header-img">
+        <div class="logo">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo" id="header-img">
+        </div>
         <nav id="nav-bar">
-            <a href="#" class="nav-link">Link1</a>
-            <a href="#" class="nav-link">Link2</a>
-            <a href="#" class="nav-link">Link3</a>
+            <a href="#feature" class="nav-link">Feature</a>
+            <a href="#how-it-work" class="nav-link">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
         </nav>
     </header>
     <main>
-        <h1>Landing Page</h1>
-        <section>
-            <p>Something here</p>
-
-
-            <iframe id="video" width="360" height="205" src="https://www.youtube.com/embed/LRTOUqLmuAU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-                </div>
+        <section id="hero">
+            <h1>Landing Page</h1>
+            
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">   
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 <button type="submit" id="submit">Submit</button>
             </form>
         </section>
+        <div class="container">
+            <section id="feature">Feature</section>
+            <section id="how-it-work">
+                <iframe id="video" width="360" height="205" src="https://www.youtube.com/embed/LRTOUqLmuAU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+            <section id="pricing">Prceio</section>
+    
+        </div>
     </main>
     <footer>
         <p>This is my footer!</p>
     </footer>
+</div>
 </body>
 </html>
