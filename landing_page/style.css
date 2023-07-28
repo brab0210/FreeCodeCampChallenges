@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+    outline: none;
 }
 
 body{
@@ -20,7 +22,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    min-height: 75px;
+    min-height: 46px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -59,4 +61,83 @@ body{
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-  }
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+#hero h1{
+    font-size: 1.15rem;
+    margin: 0.75rem 0 0.45rem 0 ;
+    font-weight: bold;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+#email{
+    min-width: 163px;
+    min-height: 18px;
+    border: 1px solid rgba(243, 149, 25,0.35);
+    font-size: 8px;
+    border-radius: 2px;
+    margin: 0.35rem 0;
+    padding-left: 0.25rem;
+}
+
+#email:focus{
+    border-radius: 2px;
+    border: 2px solid rgba(243, 149, 25,0.5);
+    box-shadow: 1px 1px 5px 2px rgba(231,166,26,0.25);
+}
+
+#submit{
+    display: block;
+    min-width: 100px;
+    min-height: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    color:rgb(245, 239, 239) ;
+    border-radius: 50px;
+    border: 1px solid rgb(156, 194, 211);
+    background-color: rgba(243, 149, 25,0.5);;
+}
+
+#feature{
+    margin-top: 10px;
+}
+
+.sub-section{
+    display: flex;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130px;
+    width: 80vw;
+    padding: 0.5rem;
+}
