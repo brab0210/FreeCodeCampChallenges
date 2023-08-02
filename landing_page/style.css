@@ -30,8 +30,9 @@ body{
     background-color: #eee;
 }
 
+
 .logo{
-    width: 35vw;
+    width: 42vw;
 }
 
 #header-img {
@@ -69,13 +70,35 @@ body{
     justify-content: center;
     height: 150px;
     text-align: center;
-    margin-top: 0.5rem;
+    margin-top: 0.85rem;
 }
 
 #hero h1{
     font-size: 1.15rem;
     margin: 0.75rem 0 0.45rem 0 ;
     font-weight: bold;
+}
+
+@media (max-width: 410px){
+    #header{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logo{
+        margin-top: 0.25rem;
+        width: 100%;
+    }
+    #nav-bar{
+        text-align: center;
+        flex-direction: column;
+        margin-top: 0.25rem;
+        gap: 2px;
+    }
+    #hero{
+        margin-top: 2.85rem;
+    }
+    
 }
 
 #form{
@@ -101,7 +124,7 @@ body{
     box-shadow: 1px 1px 5px 2px rgba(231,166,26,0.25);
 }
 
-#submit{
+.btn{
     display: block;
     min-width: 100px;
     min-height: 20px;
@@ -113,15 +136,12 @@ body{
     color:rgb(245, 239, 239) ;
     border-radius: 50px;
     border: 1px solid rgb(156, 194, 211);
-    background-color: rgba(243, 149, 25,0.5);;
-}
-
-#feature{
-    margin-top: 10px;
+    background-color: rgba(243, 149, 25,0.5)
 }
 
 .sub-section{
     display: flex;
+    align-items: center;
 }
 
 .icon{
@@ -140,4 +160,66 @@ body{
     height: 130px;
     width: 80vw;
     padding: 0.5rem;
+}
+
+#how-it-work{
+    text-align: center;
+}
+
+#video{
+    max-width: 520px;
+    width: 100%;
+}
+
+.btn-card{
+    min-width: 60px;
+    min-height: 15px;
+    font-size: 10px;
+    color: rgb(103 97 97);
+    margin-bottom: 0.5rem;
+    border-radius: 0;
+}
+
+#pricing{
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.card{
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    width: calc(100%/3);
+    margin: 0.5rem;
+}
+
+.card-top{
+    background-color: #ddd;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+}
+
+.card-bottom{
+    line-height: 1.5;
+    margin: 0.25rem auto;
+}
+
+.card-bottom span{
+    display: block;
+    margin: 0.5rem auto ;
+}
+
+@media(max-width: 375px){
+    #pricing{
+        flex-direction: column;
+        align-items: center;
+    }
 }
