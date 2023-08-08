@@ -7,5 +7,5 @@ La pagina de **freecodecamp** ofrece cursos gratuitos con certificados en distin
 - ~~Tribute Page~~
 - ~~Survey Form~~
 - ~~Product Landing Page~~
-- Technical Documentation Page
+- ~~Technical Documentation Page~~
 - Personal Portfolio Webpage
