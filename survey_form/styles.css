@@ -74,7 +74,7 @@ body::before {
     padding: 2.5rem;
     background-color: rgba(27, 27, 50, 0.8);;
     border-radius: 5px;
-    width: 420px;
+    max-width: 510px;
 }
 
 @media (max-width: 576px) {
